@@ -1,0 +1,592 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Montserrat";
+
+}
+html, body{
+width: 100%;
+ height: 100%;
+}
+#main{
+    width: 100%;
+}
+#page1{
+    height: 110vh;
+    width: 100%;
+    background-color: #262626;
+    display: flex;
+    align-items: end;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    background-color: #262626;
+    z-index: 9;
+
+}
+#navbar img{
+    height: 42px;
+}
+#nav-pt1{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+#nav-pt1 a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#nav-pt1 a:nth-child(1){
+    color: #C86733;
+}
+
+#home{
+    height: calc(110vh - 80px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#home #lf{
+    height: 100%;
+    width: 64%;
+    padding-left: 60px;
+    padding-top: 70px;
+}
+#home #lf h1{
+    font-size: 93px;
+    line-height:1.1;
+    font-weight: 800;
+    color: #C86733;
+}
+#home #lf h2{
+    font-size: 50px;
+    font-weight: 800;
+    color: #DBCDBD;
+    width: 80%;
+    margin-top: 20px;
+}
+#home #lf p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #DBCDBD;
+    margin-top: 20px;
+    width: 90%;
+}
+#home #lf #btn{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#home #lf button{
+    flex-grow: 1;
+    padding: 6px;
+    font-size: 18px;
+    background-color: #DBCDBD;
+    border: none;
+    outline: none;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+#home #lf button:nth-child(1){
+    background-color: #C86733;
+    color: #ffffffa2;
+}
+#home #lf button:nth-child(1):hover{
+    background-color: #DBCDBD;
+    color: #262626;
+}
+#home #lf button:nth-child(2):hover{
+    background-color: #C86733;
+    color: #ffffffa2;
+}
+#home #rt{
+    height: 100%;
+    width: 36%;
+    background-image: url(https://dede-digital.com/wp-content/uploads/2023/07/Profilbild_Desiree_dede-digital-marketing_Home-Page-komprimiert.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #262626;
+    display: flex;align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+    padding-top: 100px;
+}
+#page2 #left{
+    position: relative;
+    height: 70%;
+    width: 45%;
+}
+#page2 #left::after{
+    content: "";
+    position: absolute;
+    top: -5%;
+    width: 40%;
+    height: 1px;
+    background-color: #DBCDBD;
+}
+#page2 h1{
+    font-size: 93px;
+    line-height:1.1;
+    font-weight: 800;
+    color: #C86733;
+}
+#page2 #right{
+    height: 70%;
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+#page2 #right .elem{
+    position: relative;
+    width: calc(100%/3);
+    height: 100%;
+}
+#page2 #right .elem::after{
+    content: "";
+    position: absolute;
+    top: -5%;
+    width: 60%;
+    height: 2px;
+    background-color: #DBCDBD;
+}
+#page2 #right .elem h1{
+    font-size: 160px;
+    line-height:1.1;
+    font-weight: 700;
+    color: #C86733;
+}
+#page2 #right .elem h3{
+    font-size: 27px;
+    font-weight: 500;
+    width: 90%;
+    line-height: 1.3;
+    color: #DBCDBD;
+    margin: 20px 0;
+}
+#page2 #right .elem p{
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    line-height: 1.4;
+    color: #DBCDBD;
+}
+
+#page3{
+    min-height: 150vh;
+    width: 100%;
+    background-color: #262626;
+    padding: 50px 60px;
+    padding-bottom: 100px;
+}
+#page3 >h1{
+    position: relative;
+    font-size: 100px;
+    line-height:1.1;
+    font-weight: 700;
+    color: #C86733;
+    margin-bottom: 10px;
+}
+#page3 h1:after{
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: 0;
+    width: 18%;
+    height: 2px;
+    background-color: #DBCDBD;
+}
+.p3-row{
+    height: 65vh;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.p3-row .box{
+    height: 100%;
+    width: 49%;
+    border: 1px solid #DBCDBD;
+    display: flex;
+    align-items: center;
+}
+.p3-row .box .left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+.p3-row .box .left h4{
+    font-size: 30px;
+    color: #DBCDBD;
+}
+.p3-row .box .left button{
+    width: 50%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: underline;
+    border: 1px solid #DBCDBD;
+    background-color: transparent;
+    color: #DBCDBD;
+    transition: all ease 0.5s;
+}
+.p3-row .box .left button:hover{
+    background-color: #C86733;
+}
+.p3-row .box .right{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+.p3-row .box .right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 4s;
+
+}
+.p3-row .box:hover img{
+    transform: scale(1.2);
+}
+#page4{
+    height: 150vh;
+    width: 100%;
+    background-color: #262626;
+    padding: 0 60px;
+    padding-top: 100px;
+}
+#page4>h1{
+    position: relative;
+    font-size: 100px;
+    line-height:1.1;
+    font-weight: 700;
+    color: #C86733;
+    margin-bottom: 10px;
+}
+#page4 h1:after{
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: 0;
+    width: 18%;
+    height: 2px;
+    background-color: #DBCDBD;
+}
+#page4 #philo{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page4 #philo #lf{
+    width: 40%;
+    height: 100%;
+    background-color: #613131;
+    background-image: url(https://dede-digital.com/wp-content/uploads/2023/07/Home-Page_Profilbild-Desiree_komprimiert.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+#page4 #philo #rt{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+#page4 #philo #rt h4{
+    color: #DBCDBD;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#page4 #philo #rt p{
+    color: #DBCDBD;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#page4 #philo #rt i{
+    width: fit-content;
+    padding: 12px 15px;
+    font-size: 30px;
+    background-color: #C86733;
+    color: #DBCDBD;
+    border-radius: 5px;
+    transform: scale(.8);
+    transition: all ease 0.2s;
+    margin-top: 20px;
+}
+#page4 #philo #rt i:hover{
+    transform: scale(.9);
+
+}
+#page5{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #262626;
+    overflow: hidden;
+}
+#page5 #top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #262626;
+
+}
+#page5 #bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #262626;
+
+}
+#page5 h1{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,0%);
+    width: 100%;
+    font-size: 210px;
+    line-height: 1;
+    font-weight: 900;
+    color: #C86733;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#page5 h1:after{
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: 15%;
+    width: 30%;
+    height: 2px;
+    background-color: #DBCDBD;
+}
+#top-h{
+    bottom: -29%;
+}
+#bt-h{
+    top: -29.5%;
+}
+
+#page5 #center{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#262626;
+    z-index: -1;
+}
+#page5 #center .row{
+    height: calc(100%/3);
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page5 #center .row:nth-child(2){
+    border-top:1px solid #DBCDBD;
+    border-bottom:1px solid #DBCDBD ;
+}
+#page5 #center .row h2{
+    color: #DBCDBD;
+    font-size: 50px;
+}
+#page5 #center .row p{
+    width: 40%;
+    font-size: 20px;
+    color: #DBCDBD;
+}
+#page6{
+    height: 90vh;
+    width: 100%;
+    background-color: #C86733;
+    display: flex;
+    align-items: center;
+}
+#page6 #lf{
+    width: 65%;
+    height: 100%;
+    border: 1px solid #DBCDBD;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+#page6 #lf h1{
+    font-size: 90px;
+    width: 80%;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #DBCDBD;
+    text-transform: uppercase;
+}
+#page6 #rt{
+    width: 35%;
+    height: 100%;
+    border: 1px solid #DBCDBD;
+    padding: 60px 20px;
+
+}
+#page6 #rt h2{
+    font-size: 30px;
+    color: #DBCDBD;
+}
+#page6 #rt button{
+    text-decoration: underline;
+    padding: 10px 15px;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #262626;
+    color: #DBCDBD;
+    border: none;
+    outline: none;
+    margin-top: 100px;
+}
+#footer{
+    height: 50vh;
+    width: 100%;
+    background-color: #262626;
+    padding: 0 60px;
+}
+#f-1{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+#f-1 .inner{
+    width: 25%;
+    height: 100%;
+    padding: 20px;
+}
+#f-1 .inner img{
+    height: 30px;
+}
+#f-1 .inner h3{
+    color: #DBCDBD;
+    font-size: 20px;
+    font-weight: 700;
+}
+#f-1 .inner p{
+    color: #DBCDBD;
+    margin:5px 0;
+    font-size: 15px;
+}
+#f-1 .inner input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #DBCDBD;
+    margin: 20px 0;
+    background-color: transparent;
+}
+#f-1 .inner button{
+    font-size: 17px;
+    font-weight: 500;
+    color: #262626;
+    background-color: #DBCDBD;
+    border: none;
+    outline: none;
+    padding: 8px 20px; 
+}
+
+#f-1 .inner:nth-child(3){
+    width: 50%;
+    height: 100%;
+}
+
+#f-2{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#f-2 .inner2{
+    width: 25%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #DBCDBD;
+}
+#f-2 .inner2:nth-child(1){
+    justify-content: flex-start;
+}
+#f-2 .inner2:nth-child(3){
+    width: 50%;
+    height: 100%;
+}
+#f-2 .inner2 i{
+    font-size: 30px;
+    margin-right: 20px;
+    color: #DBCDBD;
+}
+
+#language{
+    position: fixed;
+    bottom: -1%;
+    right: 10%;
+    height: 60px;
+    width: 60px;
+    border-radius:5px;
+    background-color:#1E1E1E;
+    z-index: 99;
+}
+#language .lg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #1E1E1E;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #DBCDBD;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.312);
+}
+#language .lg:nth-child(1){
+    z-index: 9;
+}
+#language:hover .lg:nth-child(2){
+    top: -100%;
+}
