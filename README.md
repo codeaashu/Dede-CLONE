@@ -1,2 +1,2 @@
 # Dede-CLONE
-Creating Animating Search Bar using HTML &amp; CSS.
+It's a clone website of "https://dede-digital.com/"
